@@ -34,10 +34,10 @@ class Controller extends BaseController
 
         return response( [  
             'success' 	=> isset($success) ? $success : false , 
-            'code' 		=> isset($code) ? $code : 400, 
+            'code' 	=> isset($code) ? $code : 400, 
             'message'	=> isset($customMessage) ? $customMessage : $status_code[ $code ] ,
             'errors' 	=> isset($errors) ? $errors : null,
-            'data' 		=> isset($data) ? $data : null
+            'data' 	=> isset($data) ? $data : null
         ], $code );
 
     }
